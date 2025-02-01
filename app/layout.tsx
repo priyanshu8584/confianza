@@ -5,10 +5,7 @@ import "./globals.css";
 import Appbar from "@/components/custom/Appbar";
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
+  
 } from '@clerk/nextjs'
 import { ConvexClientProvider } from "./ConvexClientProvider";
 

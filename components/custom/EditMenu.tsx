@@ -22,8 +22,8 @@ const EditMenu = () => {
   const currentDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 
   const imageUpload = useRef<HTMLInputElement>(null);
-  const [selectImage, setSelectImage] = useState<File | null>(null);
-  const [imagePreview, setImagePreview] = useState<string | null>(null);
+  // const [selectImage, setSelectImage] = useState<File | null>(null);
+  // const [imagePreview, setImagePreview] = useState<string | null>(null);
 
   async function displayItem() {
     if (item.trim() !== '' && price.trim() !== '') {

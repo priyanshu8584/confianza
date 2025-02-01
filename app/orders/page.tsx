@@ -1,7 +1,7 @@
 import Orders from '@/components/custom/Orders'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <Orders/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

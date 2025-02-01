@@ -3,7 +3,7 @@ import EditMenu from '@/components/custom/EditMenu'
 import { useUser } from '@clerk/nextjs'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   const {user}=useUser();
   const isAdmin = user?.emailAddresses[0].emailAddress === process.env.NEXT_PUBLIC_isAdmin;
 
@@ -18,4 +18,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

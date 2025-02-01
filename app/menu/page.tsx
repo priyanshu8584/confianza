@@ -1,7 +1,7 @@
 import Menu from '@/components/custom/Menu'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
     <div className='w-full h-full'>
       <Menu/>
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
