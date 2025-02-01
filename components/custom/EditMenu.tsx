@@ -21,7 +21,7 @@ const EditMenu = () => {
   const date = new Date();
   const currentDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 
-  const imageUpload = useRef<HTMLInputElement>(null);
+  // const imageUpload = useRef<HTMLInputElement>(null);
   // const [selectImage, setSelectImage] = useState<File | null>(null);
   // const [imagePreview, setImagePreview] = useState<string | null>(null);
 

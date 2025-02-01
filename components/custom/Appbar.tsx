@@ -20,7 +20,7 @@ const Appbar = () => {
     if (userId && email && name) {
       creatingUser({ userId, name, email, isAdmin });
     }
-  }, [userId, name, email]);
+  }, [userId, name, email,creatingUser,isAdmin]);
 
   const toggleSidebar = () => {
     setIsSidebarOpen((prevState) => !prevState);
