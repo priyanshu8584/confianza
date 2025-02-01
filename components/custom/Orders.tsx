@@ -46,7 +46,7 @@ const Orders = () => {
       phoneNumber:''
     },
   });
-// @ts-ignore
+
   async function onSubmit(data: any) {
     try {
       await createOrder({

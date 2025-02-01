@@ -7,10 +7,10 @@ import { Id } from "@/convex/_generated/dataModel";
 
 interface InitialData {
   imageStorageId?: Id<"_storage">;
-  date?:string 
+
 }
 
-const ImageUpload = ({ imageStorageId: initialStorageId ,date}: InitialData) => {
+const ImageUpload = ({ imageStorageId: initialStorageId }: InitialData) => {
   const [image, setImage] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
   const [imageStorageId, setImageStorageId] = useState<Id<"_storage"> | undefined>(

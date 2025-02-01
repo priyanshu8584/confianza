@@ -46,7 +46,7 @@ const Menu = () => {
       {/* Menu Section */}
       <motion.div className="w-full lg:w-3/4 p-6" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <div className="flex justify-between items-center py-6">
-          <h2 className="font-bold text-3xl text-orange-700">Today's Menu 🍽️</h2>
+          <h2 className="font-bold text-3xl text-orange-700">Today&apos;s Menu 🍽️</h2>
           {isAdmin && (
             <Link href="/edit-menu">
               <Button className="bg-gray-500 text-white flex items-center space-x-2">

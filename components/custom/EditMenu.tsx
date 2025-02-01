@@ -11,7 +11,7 @@ import Image from './Image';
 const EditMenu = () => {
   const [item, setItem] = useState('');
   const [price, setPrice] = useState('');
-  const [uploaded, setUploaded] = useState(false);
+
 
   const allMenuCats = useQuery(api.menu.getAll);
   const addMenuItems = useMutation(api.menu.create);
@@ -115,9 +115,9 @@ const EditMenu = () => {
       <div className="w-full lg:w-1/2 p-4 flex flex-col items-center justify-center border-t lg:border-l lg:border-t-0">
         <h2 className="font-bold text-2xl text-center mb-4">Upload an Image</h2>
         <Image />
-        <Button className={`mt-4 px-6 py-2 rounded-lg shadow-md ${uploaded ? 'bg-green-500' : 'bg-blue-500'}`}>
-          {uploaded ? 'Uploaded' : 'Upload'}
-        </Button>
+        <Button className="mt-4 px-6 py-2 rounded-lg shadow-md bg-blue-500">
+  Upload
+</Button>
       </div>
     </div>
   );
