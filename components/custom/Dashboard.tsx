@@ -21,10 +21,10 @@ const Dashboard = () => {
         </h1>
         
         <p className="text-lg md:text-2xl font-medium text-gray-800 tracking-wide">
-          Located on the <span className="text-orange-600 font-semibold">16th floor</span> of PNB, Confianza 16 is your go-to eatery for satisfying cravings and fueling your day. 
-          Whether you're in the mood for a hearty meal or a quick snack, we've got you covered with a menu designed to 
-          <span className="text-orange-600 font-semibold"> delight every palate.</span>
-        </p>
+  Located on the <span className="text-orange-600 font-semibold">16th floor</span> of PNB, Confianza 16 is your go-to eatery for satisfying cravings and fueling your day. 
+  Whether you&apos;re in the mood for a hearty meal or a quick snack, we&apos;ve got you covered with a menu designed to 
+  <span className="text-orange-600 font-semibold"> delight every palate.</span>
+</p>
 
         {/* Animated Button */}
         <motion.div

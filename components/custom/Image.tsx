@@ -18,7 +18,7 @@ const ImageUpload = ({ imageStorageId: initialStorageId ,date}: InitialData) => 
   );
   const saveImage = useMutation(api.storage.saveImage)
   const generateUploadUrl = useMutation(api.storage.generateUploadUrl);
-  const deleteImage = useMutation(api.storage.deletImage);
+  // const deleteImage = useMutation(api.storage.deletImage);
 
   // ✅ Fetch image URL using storageId (only inside the component body)
   const imageUrl = useQuery(api.storage.getUrl, imageStorageId ? { storageId: imageStorageId } : "skip");
@@ -32,8 +32,8 @@ const ImageUpload = ({ imageStorageId: initialStorageId ,date}: InitialData) => 
     setUploading(true);
     try {
       // Generate a pre-signed upload URL
-      const date=new Date();
-     const today=`${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
+      // const date=new Date();
+    //  const today=`${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
       const postUrl = await generateUploadUrl();
       const result = await fetch(postUrl, {
         method: "POST",

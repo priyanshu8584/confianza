@@ -41,10 +41,10 @@ const EditMenu = () => {
     await deleteMenuItems({ _id });
   }
 
-  const handleUploadComplete = () => {
-    setUploaded(true);
-    setTimeout(() => setUploaded(false), 3000);
-  };
+  // const handleUploadComplete = () => {
+  //   setUploaded(true);
+  //   setTimeout(() => setUploaded(false), 3000);
+  // };
 
   return (
     <div className="min-h-screen text-gray-800 bg-gray-100 px-4 sm:px-8 flex flex-col lg:flex-row">

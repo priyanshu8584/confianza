@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import React, { useState } from 'react';
 import {
@@ -45,7 +46,7 @@ const Orders = () => {
       phoneNumber:''
     },
   });
-
+// @ts-ignore
   async function onSubmit(data: any) {
     try {
       await createOrder({
