@@ -13,6 +13,7 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as community from "../community.js";
 import type * as menu from "../menu.js";
 import type * as orders from "../orders.js";
 import type * as storage from "../storage.js";
@@ -27,6 +28,7 @@ import type * as users from "../users.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  community: typeof community;
   menu: typeof menu;
   orders: typeof orders;
   storage: typeof storage;

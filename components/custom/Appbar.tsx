@@ -4,7 +4,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from '@clerk/n
 import { useMutation } from 'convex/react';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { FaHome, FaConciergeBell, FaClipboardList, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
+import { FaHome, FaConciergeBell, FaClipboardList, FaPhoneAlt, FaBars, FaTimes,  FaComment } from 'react-icons/fa';
 
 const Appbar = () => {
   const { user } = useUser();
@@ -52,6 +52,9 @@ const Appbar = () => {
           <Link href="/contact-us" className="text-white hover:text-yellow-200 flex items-center gap-2" >
             <FaPhoneAlt /> Contact Us
           </Link>
+          <Link href="/community" className="text-white hover:text-yellow-200 transition flex items-center gap-2">
+            <FaComment/> Feedback
+          </Link>
           <SignedIn>
             <UserButton />
           </SignedIn>
@@ -80,6 +83,9 @@ const Appbar = () => {
           </Link>
           <Link href="/contact-us" className="hover:text-yellow-200 transition flex items-center gap-2">
             <FaPhoneAlt /> Contact Us
+          </Link>
+          <Link href="/community" className="hover:text-yellow-200 transition flex items-center gap-2">
+            <FaComment/> Feedback
           </Link>
         </div>
 

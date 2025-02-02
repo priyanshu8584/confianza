@@ -27,5 +27,11 @@ storageId:v.string()
      department:v.string(),
      phoneNumber:v.string()
 
-  })
+  }),
+  community:defineTable({
+    userId:v.string(),
+    name:v.string(),
+    suggestions:v.string()
+  }),
+ 
 })
