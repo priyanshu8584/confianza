@@ -2,7 +2,7 @@
 
 import { Textarea } from "@/components/ui/textarea";
 import { api } from "@/convex/_generated/api";
-import { SignInButton, useUser } from "@clerk/nextjs";
+import {  useUser } from "@clerk/nextjs";
 import { useMutation, useQuery } from "convex/react";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,7 @@ import { Card } from "@/components/ui/card";
 
 const Page = () => {
   const { user } = useUser();
-  const email = user?.emailAddresses[0].emailAddress;
+  const email = user?.emailAddresses?.[0]?.emailAddress ?? "";
   const community = useMutation(api.community.community);
   const getAllCommunityMessages = useQuery(api.community.getAllCommunity);
   
@@ -25,12 +25,12 @@ const Page = () => {
     setIsUploaded(false);
 
     try {
+      
       await community({
-        userId: user?.id!,
-        name: user?.fullName!,
+        userId: user?.id ?? "",
+        name: user?.fullName ?? "Anonymous",
         suggestions: communityMessage,
       });
-
       toast({
         title: "Feedback Received!",
         description: "Thank you for your valuable feedback. 😊",
