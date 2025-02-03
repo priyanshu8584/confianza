@@ -46,6 +46,7 @@ const Page = () => {
         variant: "destructive",
       });
       setIsUploaded(false);
+      console.log(error)
     }
   };
 
