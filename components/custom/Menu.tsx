@@ -42,11 +42,11 @@ const Menu = () => {
   }
 
   return (
-    <div className="font-body min-h-screen bg-gradient-to-r from-orange-50 to-orange-100 text-gray-800 px-4 sm:px-8 flex flex-col lg:flex-row">
+    <div className="font-body min-h-screen bg-white  text-gray-800 px-4 sm:px-8 flex flex-col lg:flex-row z-10">
       {/* Menu Section */}
       <motion.div className="w-full lg:w-3/4 p-6" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <div className="flex justify-between items-center py-6">
-          <h2 className="font-bold text-3xl text-orange-700">Today&apos;s Menu 🍽️</h2>
+          <h2 className="lg:text-7xl md:text-4xl xs:text-3xl font-bold text-3xl text-red-700">Today&apos;s Menu 🍽️</h2>
           {isAdmin && (
             <Link href="/edit-menu">
               <Button className="bg-gray-500 text-white flex items-center space-x-2">
@@ -56,12 +56,12 @@ const Menu = () => {
           )}
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto lg:mt-20">
           {menuItems.length > 0 ? (
             <div className="overflow-x-auto">
               <table className="min-w-full bg-white backdrop-blur-md bg-opacity-70 rounded-lg shadow-md">
                 <thead>
-                  <tr className="bg-orange-500 text-white">
+                  <tr className="bg-red-500 text-white md:text-3xl lg:text-5xl">
                     <th className="py-3 px-6 text-left">Item</th>
                     <th className="py-3 px-6 text-left">Price</th>
                   </tr>
@@ -69,8 +69,8 @@ const Menu = () => {
                 <tbody>
                   {menuItems.map((menu, index) => (
                     <tr key={index} className={`transition-all duration-300 ${index % 2 === 0 ? 'bg-gray-100' : 'bg-gray-200'} hover:bg-orange-100`}>
-                      <td className="py-3 px-6">{menu.item}</td>
-                      <td className="py-3 px-6 font-semibold text-orange-700">₹{menu.price}</td>
+                      <td className="py-3 px-6 lg:text-xl">{menu.item}</td>
+                      <td className="py-3 px-6 lg:text-xl font-semibold text-orange-700">₹{menu.price}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -79,7 +79,7 @@ const Menu = () => {
           ) : (
             <div className="text-center text-gray-600 py-6">
               <Spinner />
-              <h2 className="text-2xl font-bold text-orange-800">We are figuring it out! Please wait...</h2>
+              <h2 className="text-2xl font-bold text-red-800">We are figuring it out! Please wait...</h2>
             </div>
           )}
         </div>
@@ -104,7 +104,7 @@ const Menu = () => {
             </AnimatePresence>
           </>
         ) : (
-          <h2 className="text-3xl font-bold text-orange-600">Image Not Available</h2>
+          <h2 className="text-3xl font-bold text-red-600">Image Not Available</h2>
         )}
       </motion.div>
     </div>

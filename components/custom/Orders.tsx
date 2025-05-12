@@ -260,7 +260,7 @@ const Orders = () => {
                     className={`w-full text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ${
                       isSubmitted
                         ? 'bg-green-600 hover:bg-green-700'
-                        : 'bg-orange-600 hover:bg-orange-700'
+                        : 'bg-red-600 hover:bg-red-700'
                     }`}
                   >
                     {isSubmitted ? 'Order Submitted 🎉' : 'Submit Order'}

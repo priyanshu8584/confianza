@@ -19,19 +19,19 @@ const ContactPage = () => {
             <h3 className="text-xl font-semibold text-gray-800">📍 Contact Details</h3>
             <p className="flex items-center gap-3 text-gray-700">
               <Phone className="text-orange-600" size={20} /> 
-              <span className="hover:text-orange-600 transition">+91 9088833789 / 9831000880</span>
+              <span className="hover:text-orange-600 transition">+91 9XXXXXXX89</span>
             </p>
             <p className="flex items-center gap-3 text-gray-700">
               <Mail className="text-orange-600" size={20} /> 
-              <span className="hover:text-orange-600 transition">sampam22@gmail.com</span>
+              <span className="hover:text-orange-600 transition">urbanpalate@gmail.com</span>
             </p>
             <p className="flex items-center gap-3 text-gray-700">
               <MapPin className="text-orange-600" size={20} /> 
               <span className="hover:text-orange-600 transition">
-                United Tower, 11 Hemanta Basu Sarani, Dalhousie, Kolkata-700001
+                Kolkata
               </span>
             </p>
-            <p className="text-gray-700 mt-4"><strong>👨‍💼 Proprietor:</strong> Sanjiv Singh</p>
+         
           </div>
 
           {/* Map Section */}
